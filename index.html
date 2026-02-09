@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>New Tab</title>
+  <link rel="icon" href="icon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Quicksand:wght@300..700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="bg">
+    <div class="clock">
+      <span id="time">00:00</span>
+    </div>
+
+    <div class="ui-layer">
+      <div class="search-box">
+        <input type="text" class="ui" id="search" autocomplete="off" placeholder="Search">
+        <button id="search-btn" class="ui">
+          <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <path
+              d="M10.5 3a7.5 7.5 0 1 0 4.9 13.2l4.7 4.7a1 1 0 0 0 1.4-1.4l-4.7-4.7A7.5 7.5 0 0 0 10.5 3Zm0 2a5.5 5.5 0 1 1 0 11a5.5 5.5 0 0 1 0-11Z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+
+      <div class="card" id="todo-card">
+        <div>
+          <h1 id="todo-card-heading">To Do List</h1>
+          <div id="query-container">
+            <input type="text" id="todo-query" placeholder="Title...">
+            <button class="ui" id="add-btn">Add</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="list-anchor">
+        <ul id="todo-itemlist"></ul>
+      </div>
+
+
+      <button class="rounded-btn" id="settings-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" style="margin-top: -3px;"
+          aria-hidden="true" fill="none">
+          <path d="M3 21l5-1.2
+       L20 8
+       a2.5 2.5 0 0 0 0-3.5
+       l-.8-.8
+       a2.5 2.5 0 0 0-3.5 0
+       L4 15.5
+       Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" />
+
+          <!-- Pen tip -->
+          <path d="M14 6l4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+        </svg>
+      </button>
+      <div id="settings-pnl" class="ui card">
+        <div style="display: flex; height: 36px; justify-content: center; align-items: center;">
+          <p style="position: absolute; left: 20px; font-size: 20px;">Personalise</p>
+        </div>
+        <div style="display: grid;">
+          <div class="settings-item">
+            <span class="settings-label">Under development at the moment</span>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
