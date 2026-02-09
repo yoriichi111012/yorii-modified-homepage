@@ -8,6 +8,6 @@ It can currently only be installed through developer mode and loading it unpacka
 
 ## Installation Instructions
 1. Download the extension's zip and extract it.
-2. Go to the browser's [extensions page](chrome://extensions).
+2. Go to the browser's *extensions page* i.e *chrome://extensions*.
 3. Enable *Developer Mode*.
 4. Click *Load unpackaged* and then select the *extracted folder* of the extension.
